@@ -1,0 +1,186 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .big-btn {
+    width: 250px;
+    height: 75px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal{
+    width: 145px;
+}
+
+form input.operator{
+    color: #33ffd8;
+}
+
+.converter {
+    background: transparent;
+    text-align: center;
+    margin: auto 0;
+    padding: 5rem;
+    border: 1px solid black;
+}
+
+#result {
+    background: transparent;
+    padding: 0.5rem 1rem;
+    color: black;
+    margin: 1rem;
+}
+
+
+.btn {
+    background: blue;
+    color: white;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    margin: 2px 0;
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: rgb(240, 239, 239);
+    color: black;
+}
+
+.output {
+    padding: 1rem;
+}
+
+/*Payment*/
+#payment-form {
+    width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    background-color: black;
+}
+
+#payment-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+#payment-form input[type="password"],
+#payment-form input[type="month"],
+#payment-form input[type="number"],
+#payment-form input[type="email"],
+#payment-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+}
+
+#payment-form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+}
+  
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+  
+#task-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    margin: 10px auto;
+  }
+  
+  
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+  
+li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 10px;
+    width: 70%;
+}
+
+#product-image {
+    width: 400px;
+    height: 300px;
+  }
+  
+  #add-to-cart {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

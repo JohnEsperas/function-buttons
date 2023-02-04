@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Array Method</title>
+</head>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+
+<p>Motorcycles to choose:</p>
+
+<button onclick="pushMethod()">Push Method</button>
+<button onclick="unshiftMethod()">Unshift Method</button>
+<button onclick="popMethod()">Pop Method</button>
+<button onclick="shiftMethod()">Shift Method</button>
+<button onclick="sliceMethod()">Slice Method</button>
+
+<p id="array"></p>
+
+<script>
+let motor = ["Suzuki Gixxer 150", "Suzuki Gixxer 250", "Sniper 155", "Sniper 150"];
+
+function pushMethod() {
+    motor.push("Honda Click");
+  document.getElementById("array").innerHTML = motor;
+}
+
+function unshiftMethod() {
+    motor.unshift("Yamaha Aerox");
+  document.getElementById("array").innerHTML = motor;
+}
+
+function popMethod() {
+    motor.pop();
+  document.getElementById("array").innerHTML = motor;
+}
+
+function shiftMethod() {
+    motor.shift();
+  document.getElementById("array").innerHTML = motor;
+}
+
+function sliceMethod() {
+    motor.slice(1, 3);
+  document.getElementById("array").innerHTML = motor;
+}
+</script>
+
+<div style="width: 100%; text-align: center;">
+  <button style="font-size: 15px;" onclick="history.back()">Go Back</button>
+  <button style="font-size: 15px;" onclick="history.forward()">Next</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
